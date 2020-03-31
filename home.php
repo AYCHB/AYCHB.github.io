@@ -1,16 +1,16 @@
 <?php
 
 /*
- * Copyright (c) 2018 Barchampas Gerasimos <makindosx@gmail.com>
- * online-banking a online banking system for local businesses.
+ * Copyright (c) 2019 - 2020 AYCH inc <tokeneconomy@eclipso.eu>
+ * File LICENSE or the AGPL-3.0 or later at (https://www.gnu.org/licenses/").
  *
- * online-banking is free software: you can redistribute it and/or modify
+ * online-banking is a software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
+ * published by the AYCH inc Soft Foundation, either version 3 of the
  * License, or (at your option) any later version.
  *
  *
- * online-banking is distributed in the hope that it will be useful,
+ * AYCHBank is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU Affero General Public License for more details.
