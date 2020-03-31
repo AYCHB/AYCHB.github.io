@@ -1,16 +1,16 @@
-# online-banking
-This is a online banking system for local businesses. 
-easybank contains a user interface as well as a user authentication system <br><br>
+# AYCHBANK
+This is an online banking system for local businesses. 
+AYCHBank contains a user interface as well as a user authentication system <br><br>
 
-1) Install easybank: <br><br>
+1) Install AYCHBank: <br><br>
 
- i) Download the online-banking project and unzip <br>
+ i) Download the AYCHBank project and unzip <br>
  
- ii) Rename the online-project and give name easybank <br> 
+ ii) Rename the online-project and give name AYCHBank <br> 
  
- iii) Copy the folder easybank in to /var/www/ e.x /var/www/easybank <br>
+ iii) Copy the folder AYCHBank in to /var/www/ e.x /var/www/AYCHBank <br>
 
- iv) Import the easybank.sql file from sql folder in to your database <br><br><br>
+ iv) Import the AYCHBank.sql file from sql folder in to your database <br><br><br>
 
 
 2) Use stripe withdrawals: <br><br>
@@ -128,7 +128,7 @@ easybank contains a user interface as well as a user authentication system <br><
 
 3) Details: <br><br>
 
-It has a money transfer for the same system of your easybank business as well as for any other easybank system of another business.
+It has a money transfer for the same system of your AYCHBank business as well as for any other ONLINE bank system of another business.
 It has information about user moves.
 You can see the representation of your trading live charting.
 It can export the data in pdf format.
