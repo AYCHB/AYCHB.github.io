@@ -1,19 +1,18 @@
 <?php
 
 /*
- * Copyright (c) 2018 Barchampas Gerasimos <makindosx@gmail.com>
- * online-banking a online banking system for local businesses.
+ * Copyright (c) 2015 - 2020 Jean Wallet
+ * Copyright (c) 2015 - 2020 The AYCHDeveloper
+ * Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+ * file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+ * file LICENSE or https://www.gnu.org/licenses.
  *
- * online-banking is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
+ * This is an online-banking developed by AYCHDeveloper. It is initially built in the banking system for our local businesses.
+ * AYCHBank is used under the terms of the GNU Affero General Public License version 3.0 or later. When dealing with international registration and transaction, AYCHBank shall follow the IFM regulations and the common bank security requirements. Whenever it is distributed to the third party for use 
+ * it is served as a SaaS provided by AYCH inc with relevant license and regulations. (It is also restricted to redistribute the AYCHBank software. It is not recommended to resided it without a notice permission from AYCH inc.
  *
- *
- * online-banking is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU Affero General Public License for more details.
+ * AYCHBank is not a game. It is used for online transaction is used in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
  *
  * You should have received a copy of the GNU Affero General Public License, version 3,
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
@@ -81,13 +80,13 @@ $pdf->GetPageHeight(); // Height of Current Page
 $image="logo_pdf.jpg";
 $pdf-> Image('images/'.$image,10,5,60,50);
 $pdf->SetFont('Arial','',20);
-$pdf->Cell(280,12,"Easy Bank: https://easybank.com",0,0,TRUE);
+$pdf->Cell(280,12,"AYCHBank: https://aychb.github.io",0,0,TRUE);
 $pdf->Ln();
-$pdf->Cell(280,12,"Country: Greece",0,0,TRUE);
+$pdf->Cell(280,12,"Country: Belgium",0,0,TRUE);
 $pdf->Ln();
-$pdf->Cell(280,12,"Location: Mesolongi",0,0,TRUE);
+$pdf->Cell(280,12,"Location: Antwerpen",0,0,TRUE);
 $pdf->Ln();
-$pdf->Cell(280,12,"Phone number: 6976829275",0,0,TRUE);
+$pdf->Cell(280,12,"Phone number: 564203188",0,0,TRUE);
 $pdf->Ln(5);
 
 
@@ -96,7 +95,7 @@ $pdf->Ln();
 $pdf->Ln();
 $pdf->SetFont('times','B',10);
 $pdf->SetFillColor(230,230,230); // edw kathorizeis to xrwma
-$pdf->Cell(280,12,"All Transactions From Easy Bank",1,0,'C',TRUE);
+$pdf->Cell(280,12,"All Transactions From AYCHBank",1,0,'C',TRUE);
 $pdf->Ln(); // afhnei mia grammh keno kai paei apo katw
 // edw vazeis platos,upsos,onoma,border w,0h,kai true gia na parei to xrwma
 
@@ -126,7 +125,7 @@ $pdf->Ln();
          $sql2 = "select date_transfer, _from_customer_lastname, _from_customer_firstname, 
                   _from_customer_account_no, _to_customer_lastname, _to_customer_firstname,
                   _to_customer_account_no, transaction_number, amount                 
-                  from transactions_easy_bank 
+                  from transactions_aych_bank 
                   where  _from_customer_account_no = '$account_no'
                   order by date_transfer desc";
          $result2 = $conn->query($sql2);
