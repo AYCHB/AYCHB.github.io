@@ -4,13 +4,11 @@
  * Copyright (c) 2019 - 2020 AYCH inc <tokeneconomy@eclipso.eu>
  * File LICENSE or AGPL-3.0 or later, (https://www.gnu.org/license/).
  * 
- * The project is an online-banking software as a service (SaaS).
+ * The is an online-banking software used by AYCHBank and may be delivered as a service (SaaS).
  * It is under the terms of the GNU Affero General Public License as
- * published by the AYCH inc Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
+ * developed by the AYCH inc.
  *
- * online-banking is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * The AYCHBank is used in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU Affero General Public License for more details.
  *
@@ -92,7 +90,7 @@ margin: auto;
                 <div class="login-logo">
                     <a href="index.php">
                       <!--  <img class="align-content" src="images/logo.png" alt=""> -->
-                      <h2 align="center"> <font color="white"> <b> EASY BANK ACCOUNT </b> </font> </h2>
+                      <h2 align="center"> <font color="white"> <b> AYCH BANK ACCOUNT </b> </font> </h2>
                     </a>
                 </div>
                 <div class="login-form">
