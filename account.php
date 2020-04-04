@@ -10,7 +10,7 @@
  * AYCHBank is software under the terms of the GNU Affero General Public License as
  * built by the AYCHDeveloper, AGPL-3.0 or later. If distributed, it is a SaaS by AYCH inc. 
  *
- * AYCHBank is uded in the hope that it will be useful,
+ * AYCHBank is used in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU Affero General Public License for more details.
@@ -60,7 +60,7 @@ if (time()-$_SESSION['timestamp']>$idletime)
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <title> Easy bank </title>
+     <title> AYCHBank </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="apple-icon.png">
