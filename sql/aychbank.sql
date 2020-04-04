@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Φιλοξενητής: localhost
--- Χρόνος δημιουργίας: 24 Ιουν 2018 στις 19:48:24
+-- Χρόνος δημιουργίας: 09 Ιουν 2020 στις 19:48:24
 -- Έκδοση διακομιστή: 5.5.58-0ubuntu0.14.04.1
 -- Έκδοση PHP: 5.5.9-1ubuntu4.22
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Βάση: `easybank`
+-- Βάση: `aychbank`
 --
 
 -- --------------------------------------------------------
@@ -100,22 +100,22 @@ CREATE TABLE IF NOT EXISTS `customers` (
 -- --------------------------------------------------------
 
 --
--- Δομή πίνακα για τον πίνακα `easybank_all_reserves`
+-- Δομή πίνακα για τον πίνακα `aychbank_all_reserves`
 --
 
-CREATE TABLE IF NOT EXISTS `easybank_all_reserves` (
+CREATE TABLE IF NOT EXISTS `aychbank_all_reserves` (
   `EASY_BANK_ID` varchar(14) NOT NULL,
   `TOTAL_RESERVE` varchar(8) NOT NULL,
-  UNIQUE KEY `easy_bank_ID` (`EASY_BANK_ID`)
+  UNIQUE KEY `aych_bank_ID` (`AYCH_BANK_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Δομή πίνακα για τον πίνακα `easybank_reserve_currency`
+-- Δομή πίνακα για τον πίνακα `aychbank_reserve_currency`
 --
 
-CREATE TABLE IF NOT EXISTS `easybank_reserve_currency` (
+CREATE TABLE IF NOT EXISTS `aychbank_reserve_currency` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `date_transfer` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `_from_customer_lastname` varchar(64) NOT NULL,
@@ -222,10 +222,10 @@ CREATE TABLE IF NOT EXISTS `transactions_anyone_bank` (
 -- --------------------------------------------------------
 
 --
--- Δομή πίνακα για τον πίνακα `transactions_easy_bank`
+-- Δομή πίνακα για τον πίνακα `transactions_aych_bank`
 --
 
-CREATE TABLE IF NOT EXISTS `transactions_easy_bank` (
+CREATE TABLE IF NOT EXISTS `transactions_aych_bank` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `date_transfer` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `_from_customer_lastname` varchar(64) NOT NULL,
