@@ -31,7 +31,7 @@
 
 <head>
    
-    <title> Easy bank </title>
+    <title> AYCHBank </title>
 
     <meta charset="utf-8">
 
@@ -132,7 +132,7 @@ window.onload=changeHashOnLoad;
                 <div class="login-logo">
                     <a href="index.php">
                       <!--  <img class="align-content" src="images/logo.png" alt=""> -->
-                      <h2 align="center"> <font color="white"> <b> EASY BANK ACCOUNT </b> </font> </h2>
+                      <h2 align="center"> <font color="white"> <b> AYCH BANK ACCOUNT </b> </font> </h2>
                     </a>
                 </div>
                 <div class="login-form"  style="width: 750px; position: relative; left: -20%;">
