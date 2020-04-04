@@ -1,19 +1,18 @@
 <?php
 
 /*
- * Copyright (c) 2018 Barchampas Gerasimos <makindosx@gmail.com>
- * online-banking a online banking system for local businesses.
+ * Copyright (c) 2015 - 2020 Jean Wallet
+ * Copyright (c) 2015 - 2020 The AYCHDeveloper
+ * Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+ * file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+ * file LICENSE or https://www.gnu.org/licenses.
  *
- * online-banking is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
+ * This is an online-banking developed by AYCHDeveloper. It is initially built in the banking system for our local businesses.
+ * AYCHBank is used under the terms of the GNU Affero General Public License version 3.0 or later. When dealing with international registration and transaction, AYCHBank shall follow the IFM regulations and the common bank security requirements. Whenever it is distributed to the third party for use 
+ * it is served as a SaaS provided by AYCH inc with relevant license and regulations. (It is also restricted to redistribute the AYCHBank software. It is not recommended to resided it without a notice permission from AYCH inc.
  *
- *
- * online-banking is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU Affero General Public License for more details.
+ * AYCHBank is not a game. It is used for online transaction is used in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
  *
  * You should have received a copy of the GNU Affero General Public License, version 3,
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
@@ -54,7 +53,7 @@ if (time()-$_SESSION['timestamp']>$idletime)
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <title> Easy bank </title>
+     <title> AYCHBank </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="apple-icon.png">
@@ -184,7 +183,7 @@ function normalImg(x) {
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="home.php"> Easy Bank </a>
+                <a class="navbar-brand" href="home.php"> AYCH Bank </a>
                 <a class="navbar-brand active" href="home.php"><img src="images/logo5.png" alt="Logo"></a>
             </div>
 
@@ -433,29 +432,29 @@ countdown( "countdown", 15, 0 );
            
 
 
-          $easy_bank_transactions_january = 0;
+          $aych_bank_transactions_january = 0;
           $anyone_bank_transactions_january = 0;
-          $easy_bank_transactions_february = 0;
+          $aych_bank_transactions_february = 0;
           $anyone_bank_transactions_february = 0;
-          $easy_bank_transactions_march = 0;
+          $aych_bank_transactions_march = 0;
           $anyone_bank_transactions_march = 0;
-          $easy_bank_transactions_april = 0;
+          $aych_bank_transactions_april = 0;
           $anyone_bank_transactions_april = 0;
-          $easy_bank_transactions_may = 0;
+          $aych_bank_transactions_may = 0;
           $anyone_bank_transactions_may = 0;
-          $easy_bank_transactions_june = 0;
+          $aych_bank_transactions_june = 0;
           $anyone_bank_transactions_june = 0;
-          $easy_bank_transactions_july = 0;
+          $aych_bank_transactions_july = 0;
           $anyone_bank_transactions_july = 0;
-          $easy_bank_transactions_august = 0;
+          $aych_bank_transactions_august = 0;
           $anyone_bank_transactions_august = 0;
-          $easy_bank_transactions_september = 0;
+          $aych_bank_transactions_september = 0;
           $anyone_bank_transactions_september = 0;
-          $easy_bank_transactions_october = 0;
+          $aych_bank_transactions_october = 0;
           $anyone_bank_transactions_october = 0;
-          $easy_bank_transactions_november = 0;
+          $aych_bank_transactions_november = 0;
           $anyone_bank_transactions_november = 0;
-          $easy_bank_transactions_december = 0;
+          $aych_bank_transactions_december = 0;
           $anyone_bank_transactions_december = 0;
 
 
@@ -467,7 +466,7 @@ countdown( "countdown", 15, 0 );
              while ($row2 = $result2->fetch_assoc())
                 {
 
-                $easy_bank_transactions =  $row2['count(transaction_number)'];
+                $aych_bank_transactions =  $row2['count(transaction_number)'];
 
                 $dt1 = "0000-1-00";
                 $d1 = date_parse_from_format("Y-m-d", $dt1);
@@ -508,64 +507,64 @@ countdown( "countdown", 15, 0 );
 
                       if ($row2['month(date_transfer)'] == $d1["month"] )
                            {
-                         $easy_bank_transactions_january =  $row2['count(transaction_number)'];
+                         $aych_bank_transactions_january =  $row2['count(transaction_number)'];
                             }
 
                       if ($row2['month(date_transfer)'] == $d2["month"] )
                            {
-                         $easy_bank_transactions_february =  $row2['count(transaction_number)'];
+                         $aych_bank_transactions_february =  $row2['count(transaction_number)'];
                             }
 
                      if ($row2['month(date_transfer)'] == $d3["month"] )
                            {
-                         $easy_bank_transactions_march =  $row2['count(transaction_number)'];
+                         $aych_bank_transactions_march =  $row2['count(transaction_number)'];
                             }
 
                     if ($row2['month(date_transfer)'] == $d4["month"] )
                              {
-                         $easy_bank_transactions_april =  $row2['count(transaction_number)'];
+                         $aych_bank_transactions_april =  $row2['count(transaction_number)'];
                             }
 
 
                    if ($row2['month(date_transfer)'] == $d5["month"] )
                            {
-                         $easy_bank_transactions_may =  $row2['count(transaction_number)'];
+                         $aych_bank_transactions_may =  $row2['count(transaction_number)'];
                             }
 
                    if ($row2['month(date_transfer)'] == $d6["month"] )
                            {
-                         $easy_bank_transactions_june =  $row2['count(transaction_number)'];
+                         $aych_bank_transactions_june =  $row2['count(transaction_number)'];
                             }
 
 
                    if ($row2['month(date_transfer)'] == $d7["month"] )
                            {
-                         $easy_bank_transactions_july =  $row2['count(transaction_number)'];
+                         $aych_bank_transactions_july =  $row2['count(transaction_number)'];
                             }
 
                   if ($row2['month(date_transfer)'] == $d8["month"] )
                            {
-                         $easy_bank_transactions_august =  $row2['count(transaction_number)'];
+                         $aych_bank_transactions_august =  $row2['count(transaction_number)'];
                             }
 
                   if ($row2['month(date_transfer)'] == $d9["month"] )
                            {
-                         $easy_bank_transactions_september =  $row2['count(transaction_number)'];
+                         $aych_bank_transactions_september =  $row2['count(transaction_number)'];
                             }
 
                   if ($row2['month(date_transfer)'] == $d10["month"] )
                            {
-                         $easy_bank_transactions_october =  $row2['count(transaction_number)'];
+                         $aych_bank_transactions_october =  $row2['count(transaction_number)'];
                             }
 
                   if ($row2['month(date_transfer)'] == $d11["month"] )
                            {
-                         $easy_bank_transactions_november =  $row2['count(transaction_number)'];
+                         $aych_bank_transactions_november =  $row2['count(transaction_number)'];
                             }
 
                   if ($row2['month(date_transfer)'] == $d12["month"] )
                            {
-                         $easy_bank_transactions_december =  $row2['count(transaction_number)'];
+                         $aych_bank_transactions_december =  $row2['count(transaction_number)'];
                             }
 
 
@@ -694,20 +693,20 @@ countdown( "countdown", 15, 0 );
 
       function drawStuff() {
         var data = new google.visualization.arrayToDataTable([
-          ['Your Transactions From 2018', 'Easy Bank', 'Anyone Bank'],
+          ['Your Transactions From 2018', 'AYCHBank', 'Anyone Bank'],
           ['Full Transactions', 30000, 30],
-          ['January', $easy_bank_transactions_january*1000, $anyone_bank_transactions_january],
-          ['February',$easy_bank_transactions_february*1000, $anyone_bank_transactions_february],
-          ['March', $easy_bank_transactions_march*1000, $anyone_bank_transactions_march],
-          ['April', $easy_bank_transactions_april*1000, $anyone_bank_transactions_april],
-          ['May', $easy_bank_transactions_may*1000, $anyone_bank_transactions_may],
-          ['June', $easy_bank_transactions_june*1000, $anyone_bank_transactions_june],
-          ['July', $easy_bank_transactions_july*1000, $anyone_bank_transactions_july],
-          ['August', $easy_bank_transactions_august*1000, $anyone_bank_transactions_august],
-          ['September', $easy_bank_transactions_september*1000, $anyone_bank_transactions_september],
-          ['October', $easy_bank_transactions_october*1000, $anyone_bank_transactions_october],
-          ['November', $easy_bank_transactions_november*1000, $anyone_bank_transactions_november],
-          ['December', $easy_bank_transactions_december*1000, $anyone_bank_transactions_december]
+          ['January', $aych_bank_transactions_january*1000, $anyone_bank_transactions_january],
+          ['February',$aych_bank_transactions_february*1000, $anyone_bank_transactions_february],
+          ['March', $aych_bank_transactions_march*1000, $anyone_bank_transactions_march],
+          ['April', $aych_bank_transactions_april*1000, $anyone_bank_transactions_april],
+          ['May', $aych_bank_transactions_may*1000, $anyone_bank_transactions_may],
+          ['June', $aych_bank_transactions_june*1000, $anyone_bank_transactions_june],
+          ['July', $aych_bank_transactions_july*1000, $anyone_bank_transactions_july],
+          ['August', $aych_bank_transactions_august*1000, $anyone_bank_transactions_august],
+          ['September', $aych_bank_transactions_september*1000, $anyone_bank_transactions_september],
+          ['October', $aych_bank_transactions_october*1000, $anyone_bank_transactions_october],
+          ['November', $aych_bank_transactions_november*1000, $anyone_bank_transactions_november],
+          ['December', $aych_bank_transactions_december*1000, $anyone_bank_transactions_december]
 
         ]);
 
