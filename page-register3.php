@@ -1,19 +1,18 @@
 <?php
 
 /*
- * Copyright (c) 2018 Barchampas Gerasimos <makindosx@gmail.com>
- * online-banking a online banking system for local businesses.
+ * Copyright (c) 2015 - 2020 Jean Wallet
+ * Copyright (c) 2015 - 2020 The AYCHDeveloper
+ * Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+ * file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+ * file LICENSE or https://www.gnu.org/licenses.
  *
- * online-banking is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
+ * This is an online-banking developed by AYCHDeveloper. It is initially built in the banking system for our local businesses.
+ * AYCHBank is used under the terms of the GNU Affero General Public License version 3.0 or later. When dealing with international registration and transaction, AYCHBank shall follow the IFM regulations and the common bank security requirements. Whenever it is distributed to the third party for use 
+ * it is served as a SaaS provided by AYCH inc with relevant license and regulations. (It is also restricted to redistribute the AYCHBank software. It is not recommended to resided it without a notice permission from AYCH inc.
  *
- *
- * online-banking is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU Affero General Public License for more details.
+ * AYCHBank is not a game. It is used for online transaction is used in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
  *
  * You should have received a copy of the GNU Affero General Public License, version 3,
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
@@ -45,7 +44,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Easy bank </title>
+    <title> AYCHBank </title>
     <meta name="description" content="Sufee Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -57,7 +56,7 @@
 
 
     <link rel="apple-touch-icon" href="apple-icon.png">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico"> 
 
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -223,7 +222,7 @@ window.onload=changeHashOnLoad;
                 <div class="login-logo">
                     <a href="index.php">
                       <!--  <img class="align-content" src="images/logo.png" alt=""> -->
-                      <h2 align="center"> <font color="white"> <b> EASY BANK ACCOUNT </b> </font> </h2>
+                      <h2 align="center"> <font color="white"> <b> AYCH BANK ACCOUNT </b> </font> </h2>
                     </a>
                 </div>
                 <div class="login-form"  style="width: 550px; position: relative; left: 0%;">
@@ -265,100 +264,4 @@ window.onload=changeHashOnLoad;
                 </div>
             </div>
         </div>
-    </div>
-
-
-
-
-
-
-    <!--
-
-    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
-
-    -->
-
-
-</body>
-</html>
-
-
-
-<?php
-
-error_reporting(E_ALL | E_WARNING | E_NOTICE);
-ini_set('display_errors', TRUE);
-
-
-   if (isset($_POST['submit_step3']))
-    {
-
-      require_once('__SRC__/secure_data.php');
-
-        if (class_exists('SECURE_INPUT_DATA_AVAILABLE'))
-            {
- 
-             $obj_secure_data = new SECURE_INPUT_DATA;
-
-
-             // get personal details from user
-
-          
-        $identity_front_name  =  $_FILES['identity_front']['name'];
-        $identity_front_type  =  $_FILES['identity_front']['type'];
-        $identity_front_size  =  $_FILES['identity_front']['size'];
-        $identity_front_data  =  addslashes(file_get_contents($_FILES ['identity_front']['tmp_name']));
-       // $identity_front_data  =  $_FILES ['identity_front']['tmp_name'];
-
-        $allowed_imgs = array( "image/pjpeg","image/jpeg","image/jpg","image/png","image/x-png","image/gif");
-
-
-       if (empty($_FILES['identity_front']['tmp_name']))
-           {
-          echo '<script type="text/javascript">alert("This field is required");
-            </script>';
-         echo ("<script>location.href='page-register3.php'</script>"); 
-           }
     
-
-     else if (!in_array($identity_front_type, $allowed_imgs)) 
-         {
-          echo '<script type="text/javascript">alert("This file not image");
-            </script>';
-          echo ("<script>location.href='page-register3.php'</script>"); 
-         exit;
-         }
-
-
-       else
-         {
-
-          // insert values to sessions 
-       
-          $_SESSION['identity_front_name'] = $identity_front_name;  
-          $_SESSION['identity_front_type'] = $identity_front_type;
-          $_SESSION['identity_front_size'] = $identity_front_size;
-          $_SESSION['identity_front_data'] = $identity_front_data;
-
-          $_SESSION['step3']=true;
-
-
-
-         $yourURL="page-register4.php";
-         echo ("<script>location.href='$yourURL'</script>");
-
- 
-              } // end of else for front image of identity
-
-
-             }  // end of SECURE_INPUT_DATA_AVAILABLE class exists
-
-
-         }  // end of submit_step3
-
-
-
-?>
