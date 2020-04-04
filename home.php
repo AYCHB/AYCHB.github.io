@@ -4,14 +4,10 @@
  * Copyright (c) 2019 - 2020 AYCH inc <tokeneconomy@eclipso.eu>
  * File LICENSE or the AGPL-3.0 or later at (https://www.gnu.org/licenses/").
  *
- * online-banking is a software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the AYCH inc Soft Foundation, either version 3 of the
- * License, or (at your option) any later version.
+ * This is an online-banking run by AYCH Bank. It may be sold by AYCH inc with the title of SaaS. 
+ * It is built under the terms of the GNU Affero General Public License by the AYCH inc.
  *
- *
- * AYCHBank is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * AYCHBank is used in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU Affero General Public License for more details.
  *
