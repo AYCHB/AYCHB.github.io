@@ -1,16 +1,16 @@
 <?php
 
 /*
- * Copyright (c) 2018 Barchampas Gerasimos <makindosx@gmail.com>
- * online-banking a online banking system for local businesses.
+ * Copyright (c) 2015 - 2020 Jean Wallet
+ * Copyright (c) 2015 - 2020 The AYCHDeveloper
+ * Distributed under the MIT software license, the AGPL-3.0 or later, see the accompanying
+ * file LICENSE or http://www.opensource.org/licenses/mit-license.php.
+ * file LICENSE or https://www.gnu.org/licenses.
+
+ * AYCHBank is software under the terms of the GNU Affero General Public License as
+ * built by the AYCHDeveloper, AGPL-3.0 or later. If distributed, it is a SaaS by AYCH inc. 
  *
- * online-banking is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
- *
- *
- * online-banking is distributed in the hope that it will be useful,
+ * AYCHBank is uded in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU Affero General Public License for more details.
