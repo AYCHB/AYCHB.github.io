@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body text="green">
+
+<h1> AYCHBank! </h1>
+<p>This is some text.</p>
+<p><a href="https://aychb.github.io">Visit AYCHNank!</a></p>
+
+<p>The text attribute is not supported in HTML5. Use CSS instead.</p>
+
+</body>
+</html>
